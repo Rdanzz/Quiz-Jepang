@@ -92,261 +92,526 @@
       m1: {
         name: 'Materi 1-2 (Salam & Perkenalan)',
         words: [
-          ['sensei','Pengajar / guru'],
-          ['san','Akhiran panggilan (netral/sopan)'],
-          ['chan','Akhiran panggilan (kasual, anak/teman)'],
-          ['kun','Akhiran panggilan (laki-laki/casual)'],
-          ['ohayou gozaimasu','Selamat pagi'],
-          ['konnichiwa','Selamat siang / halo'],
-          ['konbanwa','Selamat malam (salam datang)'],
-          ['oyasuminasai','Selamat tidur'],
-          ['sayounara','Selamat tinggal'],
-          ['jaa ne','Sampai jumpa (kasual)'],
-          ['mata ne','Sampai nanti'],
-          ['hajimemashite','Salam kenal'],
-          ['dewa mata','Sampai ketemu lagi (lebih formal)'],
-          ['mata ashita','Sampai besok'],
-          ['mata raishuu','Sampai minggu depan'],
-          ['ittekimasu','Saya pergi dulu'],
-          ['itterasshai','Hati-hati di jalan (jawaban)'],
-          ['tadaima','Saya pulang'],
-          ['okaerinasai','Selamat datang kembali'],
-          ['yoroshiku onegaishimasu','Mohon kerjasamanya / salam kenal'],
-          ['gomen nasai','Maaf (lebih sopan)'],
-          ['sumimasen','Permisi / maaf'],
-          ['shitsurei shimasu','Permisi / maaf mengganggu (formal)'],
-          ['otsukaresama deshita','Terima kasih atas kerja kerasmu'],
-          ['doumo arigatou gozaimasu','Terima kasih banyak'],
-          ['iie','Tidak / Sama-sama (bila menjawab terima kasih)'],
-          ['watashi','Saya'],
-          ['watashitachi','Kita / kami'],
-          ['anata','Anda / kamu'],
-          ['anatatachi','Kalian / Anda sekalian'],
-          ['kare','Dia (laki-laki)'],
-          ['kanojo','Dia (perempuan)'],
-          ['minasan','Semua / hadirin'],
-          ['hito','Orang'],
-          ['otona','Dewasa'],
-          ['kodomo','Anak'],
-          ['tomodachi','Teman'],
-          ['kazoku','Keluarga'],
-          ['chichi','Ayah (kata sendiri)'],
-          ['haha','Ibu (kata sendiri)'],
-          ['ani','Kakak laki-laki (kata sendiri)'],
-          ['ane','Kakak perempuan (kata sendiri)'],
-          ['otooto','Adik laki-laki'],
-          ['imooto','Adik perempuan'],
-          ['ojisan','Paman'],
-          ['obasan','Bibi / tante']
+          ['せんせい', 'sensei', 'Pengajar / guru'],
+          ['さん', 'san', 'Akhiran panggilan (netral/sopan)'],
+          ['ちゃん', 'chan', 'Akhiran panggilan (kasual, anak/teman)'],
+          ['くん', 'kun', 'Akhiran panggilan (laki-laki/casual)'],
+          ['おはようございます', 'ohayou gozaimasu', 'Selamat pagi'],
+          ['こんにちは', 'konnichiwa', 'Selamat siang / halo'],
+          ['こんばんは', 'konbanwa', 'Selamat malam (salam datang)'],
+          ['おやすみなさい', 'oyasuminasai', 'Selamat tidur'],
+          ['さようなら', 'sayounara', 'Selamat tinggal'],
+          ['じゃあね', 'jaa ne', 'Sampai jumpa'],
+          ['またね', 'mata ne', 'Sampai nanti'],
+          ['はじめまして', 'hajimemashite', 'Salam kenal'],
+          ['ではまた', 'dewa mata', 'Sampai ketemu lagi'],
+          ['またあした', 'mata ashita', 'Sampai besok'],
+          ['またらいしゅう', 'mata raishuu', 'Sampai minggu depan'],
+          ['いってきます', 'ittekimasu', 'Saya pergi dulu'],
+          ['いってらっしゃい', 'itterasshai', 'Hati-hati di jalan (jawaban untuk ittekimasu)'],
+          ['ただいま', 'tadaima', 'Saya pulang'],
+          ['おかえりなさい', 'okaerinasai', 'Selamat datang kembali'],
+          ['よろしくおねがいします', 'yoroshiku onegaishimasu', 'Mohon kerjasamanya'],
+          ['ごめんなさい', 'gomen nasai', 'Maaf (lebih sopan)'],
+          ['すみません', 'sumimasen', 'Permisi / maaf'],
+          ['しつれいします', 'shitsurei shimasu', 'Permisi / maaf mengganggu / sampai jumpa (formal)'],
+          ['おつかれさまでした', 'otsukaresama deshita', 'Terima kasih atas kerja kerasmu'],
+          ['どうもありがとうございます', 'doumo arigatou gozaimasu', 'Terima kasih banyak (sangat sopan)'],
+          ['いいえ、どういたしまして', 'iie, doitashimashite', 'Sama-sama dalam bentuk sopan'],
+          ['おじぎ', 'ojigi', 'Budaya membungkukkan badan'],
+          ['わたし', 'watashi', 'Saya'],
+          ['わたしたち', 'watashitachi', 'Kita / kami'],
+          ['あなた', 'anata', 'Anda / kamu'],
+          ['あなたたち', 'anatatachi', 'Anda sekalian / kalian'],
+          ['かれ', 'kare', 'Dia (laki-laki)'],
+          ['かのじょ', 'kanojo', 'Dia (perempuan)'],
+          ['みなさん', 'minasan', 'Semuanya'],
+          ['ひと', 'hito', 'Orang'],
+          ['おとな', 'otona', 'Dewasa'],
+          ['こども', 'kodomo', 'Anak'],
+          ['おとこ', 'otoko', 'Laki-laki (kasar/gender)'],
+          ['おとこのひと', 'otokonohito', 'Pria'],
+          ['おとこのこ', 'otokonoko', 'Anak laki-laki'],
+          ['おんな', 'onna', 'Perempuan (kasar/gender)'],
+          ['おんなのひと', 'onnanohito', 'Wanita'],
+          ['おんなのこ', 'onnanoko', 'Anak perempuan'],
+          ['ともだち', 'tomodachi', 'Teman'],
+          ['かぞく', 'kazoku', 'Keluarga'],
+          ['ちち', 'chichi', 'Ayah (kata sendiri)'],
+          ['はは', 'haha', 'Ibu (kata sendiri)'],
+          ['あに', 'ani', 'Kakak laki-laki (kata sendiri)'],
+          ['あね', 'ane', 'Kakak perempuan (kata sendiri)'],
+          ['おとうと', 'otooto', 'Adik laki-laki'],
+          ['いもうと', 'imooto', 'Adik perempuan'],
+          ['おじさん', 'ojisan', 'Paman'],
+          ['おばさん', 'obasan', 'Bibi / tante'],
+          ['りょうしん', 'ryoushin', 'Kedua orang tua'],
+          ['きょうだい', 'kyoudai', 'Saudara kandung laki-laki'],
+          ['しまい', 'shimai', 'Saudara kandung perempuan'],
+          ['おとうさん', 'otousan', 'Panggilan kepada ayah'],
+          ['おかあさん', 'okaasan', 'Panggilan kepada ibu'],
+          ['おにいさん', 'oniisan', 'Panggilan kepada kakak laki-laki'],
+          ['おねえさん', 'oneesan', 'Panggilan kepada kakak perempuan'],
+          ['おじいさん', 'ojiisan', 'Kakek'],
+          ['おばあさん', 'obaasan', 'Nenek'],
+          ['きみ', 'kimi', 'Kamu (kasual, digunakan pria)'],
+          ['ぼく', 'boku', 'Aku (kasual, dipakai pria)'],
+          ['かてい', 'katei', 'Keluarga / rumah tangga'],
+          ['じぶん', 'jibun', 'Diri sendiri'],
+          ['なまえ', 'namae', 'Nama'],
+          ['がいこくじん', 'gaikokujin', 'Orang asing']
         ]
       },
 
       m2: {
-        name: 'Materi 3-4 (Negara, Profesi, Tata Bahasa Dasar)',
-        words: [
-          ['hai','Ya / benar'],
-          ['iie','Tidak'],
-          ['jin','~orang (sufiks kebangsaan)'],
-          ['go','Bahasa ~'],
-          ['oranda','Belanda'],
-          ['ooroppa','Eropa'],
-          ['nihon','Jepang'],
-          ['indonesia','Indonesia'],
-          ['furansu','Prancis'],
-          ['doitsu','Jerman'],
-          ['oosutoraria','Australia'],
-          ['roshia','Rusia'],
-          ['chuugoku','Tiongkok / Cina'],
-          ['kankoku','Korea Selatan'],
-          ['tai','Thailand'],
-          ['firipin','Filipina'],
-          ['mareshia','Malaysia'],
-          ['betonamu','Vietnam'],
-          ['indo','India'],
-          ['sauji arabia','Arab Saudi'],
-          ['toruko','Turki'],
-          ['ejiputo','Mesir'],
-          ['mekishiko','Meksiko'],
-          ['shingapooru','Singapura'],
-          ['buraziru','Brazil'],
-          ['anohito','Orang itu'],
-          ['anokata','Orang itu (lebih sopan)'],
-          ['dare','Siapa'],
-          ['donata','Siapa (sopan)'],
-          ['konpyuutaa','Komputer'],
-          ['pasokon','Laptop / komputer pribadi'],
-          ['keitaidenwa','Telepon genggam'],
-          ['purintaa','Printer'],
-          ['kopiuki','Mesin fotokopi'],
-          ['keisanki','Kalkulator'],
-          ['tsukue','Meja'],
-          ['isu','Kursi'],
-          ['kyoushi','Pengajar / guru / dosen'],
-          ['puroguramaa','Programmer'],
-          ['web dezainaa','Web designer'],
-          ['enjinia','Engineer / insinyur'],
-          ['sofutowea enjinia','Software engineer'],
-          ['kaishain','Pegawai kantor'],
-          ['koumuin','Pegawai negeri'],
-          ['isha','Dokter'],
-          ['kangoshi','Perawat'],
-          ['keisatsukan','Polisi']
-        ]
-      },
+  name: 'Materi 3-4 (Negara, Profesi, Tata Bahasa Dasar)',
+  words: [
+    ['はい', 'hai', 'Ya / benar / baik'],
+    ['いいえ', 'iie', 'Tidak / bukan'],
+    ['〜じん', 'jin', 'Akhiran: ~orang (kebangsaan)'],
+    ['〜ご', 'go', 'Akhiran: ~bahasa'],
+    ['オランダ', 'oranda', 'Belanda'],
+    ['ヨーロッパ', 'ōroppa', 'Eropa'],
+    ['にほん', 'nihon', 'Jepang'],
+    ['インドネシア', 'indoneshia', 'Indonesia'],
+    ['フランス', 'furansu', 'Prancis'],
+    ['ドイツ', 'doitsu', 'Jerman'],
+    ['オーストラリア', 'ōsutoraria', 'Australia'],
+    ['ロシア', 'roshia', 'Rusia'],
+    ['ちゅうごく', 'chūgoku', 'Tiongkok / Cina'],
+    ['かんこく', 'kankoku', 'Korea Selatan'],
+    ['タイ', 'tai', 'Thailand'],
+    ['フィリピン', 'firipin', 'Filipina'],
+    ['マレーシア', 'marēshia', 'Malaysia'],
+    ['ベトナム', 'betonamu', 'Vietnam'],
+    ['インド', 'indo', 'India'],
+    ['サウジアラビア', 'sauji arabia', 'Arab Saudi'],
+    ['トルコ', 'toruko', 'Turki'],
+    ['エジプト', 'ejiputo', 'Mesir'],
+    ['メキシコ', 'mekishiko', 'Meksiko'],
+    ['シンガポール', 'shingapōru', 'Singapura'],
+    ['ブラジル', 'buraziru', 'Brazil'],
+    ['あのひと', 'anohito', 'Orang itu'],
+    ['あのかた', 'anokata', 'Orang itu (lebih sopan)'],
+    ['だれ', 'dare', 'Siapa'],
+    ['どなた', 'donata', 'Siapa (lebih sopan)'],
+    ['コンピューター', 'konpyuutaa', 'Komputer'],
+    ['ノート パソコン', 'nooto pasokon', 'Laptop / komputer pribadi'],
+    ['けいたいでんわ', 'keitaidenwa', 'Telepon genggam'],
+    ['プリンター', 'purintaa', 'Printer'],
+    ['コピーき', 'kopīki', 'Mesin fotokopi'],
+    ['けいさんき', 'keisanki', 'Kalkulator'],
+    ['つくえ', 'tsukue', 'Meja'],
+    ['いす', 'isu', 'Kursi'],
+    ['きょうし', 'kyōshi', 'Pengajar / guru / dosen'],
+    ['プログラマー', 'puroguramaa', 'Programmer'],
+    ['ウェブデザイナー', 'web dezainaa', 'Web desainer'],
+    ['エンジニア', 'enjinia', 'Insinyur / engineer'],
+    ['システムエンジニア', 'shisutemu enjinia', 'Sistem engineer'],
+    ['テクニシャン', 'tekunishan', 'Teknisi (bengkel)'],
+    ['ゲームクリエーター', 'geemu kurietaa', 'Kreator gim'],
+    ['アニメーター', 'animeetaa', 'Animator'],
+    ['せいじか', 'seijika', 'Politikus'],
+    ['さっか', 'sakka', 'Penulis'],
+    ['かんごし', 'kangoshi', 'Perawat'],
+    ['けいさつかん', 'keisatsukan', 'Polisi'],
+    ['いしゃ', 'isha', 'Dokter'],
+    ['かいしゃいん', 'kaishain', 'Pegawai kantor'],
+    ['しゃいん', 'shain', 'Karyawan / pegawai perusahaan'],
+    ['こうむいん', 'koumuin', 'Pegawai negeri'],
+    ['ソフトウェアエンジニア', 'sofutowea enjinia', 'Software engineer'],
+    ['こちらこそ', 'kochirakoso', 'Sama-sama / membalas kerendahan hati'],
+    ['ごくろうさまです', 'gokurousama desu', 'Terima kasih atas kerja kerasmu (atasan ke bawahan)'],
+    ['どうぞ', 'douzo', 'Silakan'],
+    ['おさきに', 'osaki ni', 'Duluan / lebih dulu'],
+    ['いただきます', 'itadakimasu', 'Selamat makan (sebelum makan)'],
+    ['ごちそうさまでした', 'gochisousama deshita', 'Terima kasih atas makanannya'],
+    ['おめでとうございます', 'omedetou gozaimasu', 'Selamat'],
+    ['がんばってください', 'ganbatte kudasai', 'Semangat / lakukan yang terbaik'],
+    ['がんばる / がんばります', 'ganbaru / ganbarimasu', 'Saya akan berusaha!'],
+    ['だいじょうぶです', 'daijoubu desu', 'Tidak apa-apa / saya baik-baik saja'],
+    ['いらっしゃいませ', 'irasshaimase', 'Selamat datang (di toko / pelayanan)'],
+    ['ようこそ', 'youkoso', 'Selamat datang (umum, acara, tamu)'],
+    ['いらっしゃい', 'irasshai', 'Selamat datang (kasual)'],
+    ['みなさん、ようこそいらっしゃいました', 'minasan, youkoso irasshaimashita', 'Selamat datang semuanya (pembukaan acara)'],
+    ['おげんきですか', 'ogenki desu ka', 'Apa kabar?'],
+    ['げんきです', 'genki desu', 'Saya baik'],
+    ['ひさしぶり', 'hisashiburi', 'Lama tidak bertemu'],
+    ['これから、おせわになります', 'korekara, osewa ni narimasu', 'Mohon kerjasamanya (awal pertemuan)'],
+    ['いつも、おせわになっております', 'itsumo, osewa ni natte orimasu', 'Terima kasih atas kerja sama saat ini (hubungan sedang berlangsung)'],
+    ['おせわになりました', 'osewa ni narimashita', 'Terima kasih atas bantuan sebelumnya (pamit)'],
+    ['そうですか', 'sou desu ka', 'Oh begitu / gitu ya']
+  ]
+},
 
       m3: {
-        name: 'Materi 5 (Wilayah, Hewan, Buah, Makanan)',
-        words: [
-          ['hokkaidou','Hokkaido (prefektur)'],
-          ['touhoku','Tōhoku (wilayah utara)'],
-          ['toukyou','Tokyo'],
-          ['kanagawa','Kanagawa'],
-          ['saitama','Saitama'],
-          ['chiba','Chiba'],
-          ['niigata','Niigata'],
-          ['shizuoka','Shizuoka'],
-          ['aichi','Aichi'],
-          ['kyouto','Kyoto'],
-          ['oosaka','Osaka'],
-          ['fukuoka','Fukuoka'],
-          ['okinawa','Okinawa'],
+  name: 'Materi 5 (Wilayah, Hewan, Buah, Makanan)',
+  words: [
+    ['ほっかいどう', 'Hokkaidō', 'Hokkaido'],
+    ['とうほく', 'Tōhoku', 'Wilayah Utara'],
+    ['～けん', 'Ken', 'Penyebutan Prefektur'],
+    ['あおもり', 'Aomori', 'Aomori'],
+    ['いわて', 'Iwate', 'Iwate'],
+    ['みやぎ', 'Miyagi', 'Miyagi'],
+    ['あきた', 'Akita', 'Akita'],
+    ['やまがた', 'Yamagata', 'Yamagata'],
+    ['ふくしま', 'Fukushima', 'Fukushima'],
+    ['かんとう', 'Kantō', 'Wilayah Timur'],
+    ['いばらき', 'Ibaraki', 'Ibaraki'],
+    ['とちぎ', 'Tochigi', 'Tochigi'],
+    ['ぐんま', 'Gunma', 'Gunma'],
+    ['さいたま', 'Saitama', 'Saitama'],
+    ['ちば', 'Chiba', 'Chiba'],
+    ['とうきょう', 'Tōkyō', 'Tokyo'],
+    ['かながわ', 'Kanagawa', 'Kanagawa'],
+    ['ちゅうぶ', 'Chūbu', 'Wilayah Tengah'],
+    ['にいがた', 'Niigata', 'Niigata'],
+    ['とやま', 'Toyama', 'Toyama'],
+    ['いしかわ', 'Ishikawa', 'Ishikawa'],
+    ['ふくい', 'Fukui', 'Fukui'],
+    ['やまなし', 'Yamanashi', 'Yamanashi'],
+    ['ながの', 'Nagano', 'Nagano'],
+    ['しずおか', 'Shizuoka', 'Shizuoka'],
+    ['あいち', 'Aichi', 'Aichi'],
+    ['ぎふ', 'Gifu', 'Gifu'],
+    ['かんさい', 'Kansai', 'Wilayah Tengah Selatan'],
+    ['みえ', 'Mie', 'Mie'],
+    ['しが', 'Shiga', 'Shiga'],
+    ['きょうと', 'Kyōto', 'Kyoto'],
+    ['おおさか', 'Ōsaka', 'Osaka'],
+    ['ひょうご', 'Hyōgo', 'Hyogo'],
+    ['なら', 'Nara', 'Nara'],
+    ['わきやま', 'Kawayama', 'Kawayama'],
+    ['ちゅうごく', 'Chūgoku', 'Wilayah Tengah Barat'],
+    ['とっとり', 'Tottori', 'Tottori'],
+    ['しまね', 'Shimane', 'Shimane'],
+    ['おかやま', 'Okayama', 'Okayama'],
+    ['ひろしま', 'Hiroshima', 'Hiroshima'],
+    ['やまぐち', 'Yamaguchi', 'Yamaguchi'],
+    ['しこく', 'Shikoku', 'Wilayah Empat Provinsi'],
+    ['とくしま', 'Tokushima', 'Tokushima'],
+    ['かがわ', 'Kagawa', 'Kagawa'],
+    ['えひめ', 'Ehime', 'Ehime'],
+    ['こうち', 'Kōchi', 'Kochi'],
+    ['きゅうしゅう', 'Kyūshū', 'Wilayah 9 Provinsi'],
+    ['ふくおか', 'Fukuoka', 'Fukuoka'],
+    ['さが', 'Saga', 'Saga'],
+    ['ながさき', 'Nagasaki', 'Nagasaki'],
+    ['くまもと', 'Kumamoto', 'Kumamoto'],
+    ['おおいた', 'Ōita', 'Oita'],
+    ['みやざき', 'Miyazaki', 'Miyazaki'],
+    ['かごしま', 'Kagoshima', 'Kagoshima'],
+    ['おきなわ', 'Okinawa', 'Okinawa'],
 
-          ['inu','Anjing'],
-          ['neko','Kucing'],
-          ['tori','Burung'],
-          ['uma','Kuda'],
-          ['buta','Babi'],
-          ['ushi','Sapi'],
-          ['niwatori','Ayam / unggas'],
-          ['zou','Gajah'],
-          ['sakana','Ikan'],
-          ['mushi','Serangga'],
-          ['panda','Panda'],
-          ['usagi','Kelinci'],
-          ['tora','Harimau'],
-          ['nezumi','Tikus'],
+    // Hewan
+    ['どうぶつ', 'Dōbūtsu', 'Hewan'],
+    ['いぬ', 'Inu', 'Anjing'],
+    ['ねこ', 'Neko', 'Kucing'],
+    ['とり', 'Tori', 'Burung'],
+    ['うま', 'Uma', 'Kuda'],
+    ['ぶた', 'Buta', 'Babi'],
+    ['うし', 'Ushi', 'Sapi'],
+    ['にわとり', 'Niwatori', 'Ayam / unggas'],
+    ['ぞう', 'Zou', 'Gajah'],
+    ['さかな', 'Sakana', 'Ikan'],
+    ['むし', 'Mushi', 'Serangga'],
+    ['いるか', 'Iruka', 'Lumba-lumba'],
+    ['パンダ', 'Panda', 'Panda'],
+    ['うさぎ', 'Usagi', 'Kelinci'],
+    ['おおかみ', 'Ōkami', 'Serigala'],
+    ['くま', 'Kuma', 'Beruang'],
+    ['さる', 'Saru', 'Monyet'],
+    ['しか', 'Shika', 'Rusa'],
+    ['しまうま', 'Shimauma', 'Zebra'],
+    ['とら', 'Tora', 'Harimau'],
+    ['ねずみ', 'Nezumi', 'Tikus'],
 
-          ['ringo','Apel'],
-          ['mikan','Jeruk'],
-          ['ichigo','Stroberi'],
-          ['budou','Anggur'],
-          ['suika','Semangka'],
-          ['sakura nbo','Buah ceri'],
-          ['momo','Persik'],
-          ['kaki','Kesemek'],
-          ['remon','Lemon'],
-          ['meron','Melon'],
-          ['banana','Pisang'],
-          ['painappuru','Nanas'],
+    // Buah
+    ['くだもの', 'Kudamono', 'Buah-buahan'],
+    ['りんご', 'Ringo', 'Apel'],
+    ['みかん', 'Mikan', 'Jeruk'],
+    ['いちご', 'Ichigo', 'Stroberi'],
+    ['ぶどう', 'Būdō', 'Anggur'],
+    ['すいか', 'Suika', 'Semangka'],
+    ['さくらんぼ', 'Sakuranbo', 'Buah ceri'],
+    ['もも', 'Momo', 'Persik'],
+    ['かき', 'Kaki', 'Kesemek'],
+    ['レモン', 'Remon', 'Lemon'],
+    ['メロン', 'Meron', 'Melon'],
+    ['バナナ', 'Banana', 'Pisang'],
+    ['パイナップル', 'Painappuru', 'Nanas'],
+    ['パパイヤ', 'Papaiya', 'Pepaya'],
+    ['ドリアン', 'Dorian', 'Durian'],
+    ['マンゴー', 'Mangoo', 'Mangga'],
+    ['ココナッツ', 'Kokonattsu', 'Kelapa'],
 
-          ['tabemono','Makanan'],
-          ['ryouri','Masakan'],
-          ['gohan','Nasi'],
-          ['bentou','Bekal (kotak makanan)'],
-          ['asagohan','Sarapan'],
-          ['hirugohan','Makan siang'],
-          ['bangohan','Makan malam'],
-          ['sushi','Sushi'],
-          ['sashimi','Sashimi'],
-          ['raamen','Ramen'],
-          ['udon','Udon'],
-          ['soba','Soba'],
-          ['miso shiru','Sup miso']
-        ]
-      },
+    // Makanan
+    ['たべもの', 'Tabemono', 'Makanan'],
+    ['りょうり', 'Ryōri', 'Masakan'],
+    ['ごはん', 'Gohan', 'Nasi'],
+    ['べんとう', 'Bentou', 'Bekal'],
+    ['あさごはん', 'Asagohan', 'Sarapan'],
+    ['ひるごはん', 'Hirugohan', 'Makan siang'],
+    ['ばんごはん', 'Bangohan', 'Makan malam'],
+    ['すし', 'Sushi', 'Sushi (nasi dengan ikan mentah)'],
+    ['さしみ', 'Sashimi', 'Sashimi (ikan mentah)'],
+    ['ぎゅうどん', 'Gyūdon', 'Mangkuk nasi dengan daging sapi'],
+    ['みそしる', 'Misoshiru', 'Sup miso'],
+    ['ていしょく', 'Teishoku', 'Makanan set'],
+    ['おにぎり', 'Onigiri', 'Nasi kepal'],
+    ['うどん', 'Udon', 'Udon'],
+    ['そば', 'Soba', 'Soba'],
+    ['ラーメン', 'Raamen', 'Ramen'],
+    ['てんぷら', 'Tenpura', 'Tempura'],
+    ['ハンバーグ', 'Hambaagu', 'Hamburger'],
 
-      m4: {
-        name: 'Materi 6 (Kosoado & Tempat / Benda)',
-        words: [
-          ['kore','Ini (benda dekat pembicara)'],
-          ['sore','Itu (dekat lawan bicara)'],
-          ['are','Itu (jauh)'],
-          ['dore','Yang mana?'],
-          ['koko','Di sini'],
-          ['soko','Di situ'],
-          ['asoko','Di sana'],
-          ['doko','Di mana?'],
-          ['kochira','Sini / sebelah sini (sopan)'],
-          ['sochira','Situ / sebelah situ (sopan)'],
-          ['achira','Sana / sebelah sana (sopan)'],
+    // Minuman
+    ['のみもの', 'Nomimono', 'Minuman'],
+    ['コーヒー', 'Koohii', 'Kopi'],
+    ['こうちゃ', 'Koocha', 'Teh'],
+    ['おちゃ', 'Ocha', 'Teh hijau'],
+    ['ぎゅうにゅう', 'Gyūnyū', 'Susu'],
+    ['ジュース', 'Juusu', 'Jus'],
+    ['オレンジジュース', 'Orenji Juusu', 'Jus jeruk'],
+    ['ソーダ', 'Sooda', 'Soda'],
+    ['メロンソーダ', 'Meron Sooda', 'Soda melon'],
+    ['コーラ', 'Koora', 'Minuman cola'],
+    ['みず', 'Mizu', 'Air putih'],
+    ['おゆ', 'Oyu', 'Air panas']
+  ]
+},
+     m4: {
+  name: 'Materi 6 (Kosoado & Tempat / Benda)',
+  words: [
+    // Kosoado
+    ['これ', 'kore', 'Ini'],
+    ['それ', 'sore', 'Itu'],
+    ['あれ', 'are', 'Itu (jauh)'],
+    ['どれ', 'dore', 'Yang mana'],
+    ['ここ', 'koko', 'Di sini'],
+    ['そこ', 'soko', 'Di situ'],
+    ['あそこ', 'asoko', 'Di sana'],
+    ['どこ', 'doko', 'Di mana'],
+    ['こちら', 'kochira', 'Di sini / sebelah sini'],
+    ['そちら', 'sochira', 'Di situ / sebelah situ'],
+    ['あちら', 'achira', 'Di sana / sebelah sana'],
+    ['どちら', 'dochira', 'Di mana / yang mana / mana'],
 
-          ['mono','Barang'],
-          ['kutsu','Sepatu'],
-          ['kaado','Kartu'],
-          ['meishi','Kartu nama'],
-          ['tabako','Rokok'],
-          ['enpitsu','Pensil'],
-          ['pen','Pulpen'],
-          ['hon','Buku'],
-          ['jisho','Kamus'],
-          ['zasshi','Majalah'],
-          ['shinbun','Koran'],
-          ['nooto','Buku catatan'],
+    // Barang
+    ['もの', 'mono', 'Barang'],
+    ['せんい', 'sen’i', 'Tekstil'],
+    ['くつ', 'kutsu', 'Sepatu'],
+    ['あんぜんぐつ', 'anzen gutsu', 'Safety shoes'],
+    ['カード', 'kaado', 'Kartu'],
+    ['めいし', 'meishi', 'Kartu nama'],
+    ['たばこ', 'tabako', 'Rokok'],
+    ['ボールペン', 'boorupen', 'Pena / ballpoint'],
+    ['えんぴつ', 'enpitsu', 'Pensil'],
+    ['ほん', 'hon', 'Buku'],
+    ['じしょ', 'jisho', 'Kamus'],
+    ['ざっし', 'zasshi', 'Majalah'],
+    ['しんぶん', 'shinbun', 'Koran'],
+    ['ノート', 'nōto', 'Buku catatan / notes'],
+    ['てちょう', 'techou', 'Buku agenda'],
+    ['かばん', 'kaban', 'Tas'],
+    ['とけい', 'tokei', 'Jam'],
+    ['うでどけい', 'udedokei', 'Jam tangan'],
+    ['でんわ', 'denwa', 'Telepon'],
+    ['シャツ', 'shatsu', 'Kemeja'],
+    ['ティーシャツ', 'tīshatsu', 'Kaos'],
+    ['ぼうし', 'boushi', 'Topi'],
+    ['かぎ', 'kagi', 'Kunci'],
+    ['かさ', 'kasa', 'Payung'],
+    ['テレビ', 'terebi', 'Televisi'],
+    ['ラジオ', 'rajio', 'Radio'],
+    ['カメラ', 'kamera', 'Kamera'],
+    ['くるま', 'kuruma', 'Mobil (umum, kendaraan beroda)'],
+    ['じどうしゃ', 'jidousha', 'Mobil (kendaraan bermotor / formal)'],
+    ['じてんしゃ', 'jitensha', 'Sepeda'],
+    ['オートバイ', 'ōtobai', 'Sepeda motor'],
+    ['バイク', 'baiku', 'Motor (kasual)'],
 
-          ['gakkou','Sekolah'],
-          ['daigaku','Universitas'],
-          ['koukou','SMA'],
-          ['chuugakkou','SMP'],
-          ['shougakkou','SD'],
-          ['youchien','TK'],
-          ['kyoushitsu','Ruang kelas'],
-          ['shokudou','Kantin'],
-          ['toire','Toilet'],
-          ['eki','Stasiun']
-        ]
-      },
+    // Tempat
+    ['ばしょ', 'basho', 'Tempat'],
+    ['がっこう', 'gakkō', 'Sekolah'],
+    ['だいがく', 'daigaku', 'Universitas'],
+    ['こうこう', 'kōkō', 'SMA'],
+    ['ちゅうがっこう', 'chūgakkō', 'SMP'],
+    ['しょうがっこう', 'shōgakkō', 'SD'],
+    ['ようちえん', 'yōchien', 'TK'],
+    ['クラス', 'kurasu', 'Kelas'],
+    ['きょうしつ', 'kyōshitsu', 'Ruang kelas'],
+    ['しょくどう', 'shokudō', 'Kantin / ruang makan'],
+    ['かいぎしつ', 'kaigishitsu', 'Ruang rapat'],
+    ['トイレ', 'toire', 'Toilet'],
+    ['ロビー', 'robī', 'Lobi'],
+    ['かいだん', 'kaidan', 'Tangga'],
+    ['エレベーター', 'erebētā', 'Lift'],
+    ['エスカレーター', 'esukarētā', 'Eskalator'],
+    ['じむしょ', 'jimusho', 'Kantor / ruang kerja'],
+    ['けんきゅうしつ', 'kenkyūshitsu', 'Laboratorium / ruang penelitian'],
+    ['こうてい', 'kōtei', 'Halaman sekolah / lapangan'],
+    ['ちゅうしゃじょう', 'chūshajō', 'Tempat parkir'],
+    ['レジ', 'reji', 'Kasir'],
+    ['スーパー', 'sūpā', 'Supermarket'],
+    ['デパート', 'depāto', 'Department store'],
+    ['いちば', 'ichiba', 'Pasar'],
+    ['こうえん', 'kōen', 'Taman'],
+    ['ゆうえんち', 'yūenchi', 'Taman bermain'],
+    ['としょかん', 'toshokan', 'Perpustakaan'],
+    ['えいがかん', 'eigakan', 'Bioskop'],
+    ['レストラン', 'resutoran', 'Restoran'],
+    ['ホテル', 'hoteru', 'Hotel'],
+    ['びょういん', 'byōin', 'Rumah sakit'],
+    ['くすりや', 'kusuriya', 'Apotek'],
+    ['コンビニ', 'konbini', 'Minimarket'],
+    ['いえ / うち', 'ie / uchi', 'Rumah (fisik) / rumah (makna luas)'],
+    ['へや', 'heya', 'Kamar'],
+    ['まち', 'machi', 'Kota'],
+    ['くに', 'kuni', 'Negara'],
+    ['えき', 'eki', 'Stasiun'],
 
+    // Ekspresi tambahan
+    ['なん', 'nan', 'Apa'],
+    ['そうです', 'sou desu', 'Begitu / benar'],
+    ['そうじゃありません', 'sō ja arimasen', 'Bukan'],
+    ['ちがいます', 'chigaimasu', 'Bukan / salah'],
+    ['ほん の きもち です', 'hon no kimochi desu', 'Ini ungkapan perasaan saya (saat memberi)'],
+    ['うりば', 'uriba', 'Tempat penjualan / bagian di toko']
+  ]
+},
       m5: {
-        name: 'Materi 7 (Alat Tulis, Rumah, Tubuh, Toko)',
-        words: [
-          ['bunbougu','Alat tulis / stationery'],
-          ['enpitsukezuri','Rautan pensil'],
-          ['keshigomu','Penghapus'],
-          ['jougi','Penggaris'],
-          ['hasami','Gunting'],
-          ['fude','Kuas / kuas tinta'],
-          ['kataa','Cutter / pisau kecil'],
-          ['fairu','Map / file'],
-          ['teepu','Selotip umum'],
-          ['nori','Lem'],
-          ['hocchikisu','Stapler'],
+  name: 'Materi 7 (Alat Tulis, Rumah, Tubuh, Toko)',
+  words: [
+    // Alat tulis & perlengkapan kantor
+    ['ぶんぼうぐ', 'bunbougu', 'Alat tulis / stationery'],
+    ['じむようひん', 'jimuyouhin', 'Perlengkapan kantor / ATK'],
+    ['えんぴつけずり', 'enpitsukezuri', 'Rautan pensil'],
+    ['ぺん', 'pen', 'Pulpen'],
+    ['シャープペンシル', 'shaapupenshiru', 'Pensil mekanik'],
+    ['けしゴム', 'keshigomu', 'Penghapus'],
+    ['じょうぎ', 'jougi', 'Penggaris'],
+    ['クリップ', 'kurippu', 'Klip kertas'],
+    ['はさみ', 'hasami', 'Gunting'],
+    ['ふで', 'fude', 'Kuas / tinta tulis'],
+    ['カッター', 'kattaa', 'Cutter / pisau kecil'],
+    ['ファイル', 'fairu', 'Map / file'],
+    ['しん', 'shin', 'Isi pensil'],
+    ['テープ', 'teepu', 'Selotip umum'],
+    ['セロテープ', 'seroteepu', 'Selotip bening'],
+    ['ガムテープ', 'gamuteepu', 'Lakban'],
+    ['のり', 'nori', 'Lem'],
+    ['ボンド', 'bondo', 'Lem cair (seperti UHU)'],
+    ['ホッチキス', 'hocchikisu', 'Stapler'],
+    ['ホッチキスのしん', 'hocchikisu no shin', 'Isi stapler'],
+    ['テープカッター', 'teepukattaa', 'Pemotong selotip'],
+    ['しゅうせいテープ', 'shuusei teepu', 'Correction tape'],
+    ['しゅうせいえき', 'shuusei eki', 'Correction fluid (tipex)'],
+    ['ステッカー', 'suteekkaa', 'Stiker'],
+    ['ふせん', 'fusen', 'Sticky note / post-it / catatan tempel'],
+    ['カレンダー', 'karendaa', 'Kalender'],
+    ['ふうとう', 'fuutou', 'Amplop'],
+    ['てがみ', 'tegami', 'Surat'],
+    ['コピーようし', 'kopi youshi', 'Kertas fotokopi'],
+    ['レポートようし', 'repooto youshi', 'Kertas laporan'],
+    ['スタンプ', 'sutanpu', 'Stempel'],
+    ['インク', 'inku', 'Tinta'],
+    ['インクパッド', 'inku paddo', 'Bantalan tinta'],
+    ['ハンコ', 'hanko', 'Cap nama / stempel pribadi'],
+    ['モニター', 'monitā', 'Monitor'],
+    ['キーボード', 'kiiboodo', 'Papan ketik'],
+    ['マウス', 'mausu', 'Mouse'],
+    ['プロジェクター', 'purojekutaa', 'Proyektor'],
+    ['ホワイトボード', 'howaitobo-do', 'Papan tulis putih'],
+    ['チョーク', 'chooku', 'Kapur'],
+    ['こくばん', 'kokuban', 'Papan tulis hitam / kapur'],
 
-          ['denki','Listrik / lampu'],
-          ['kagi','Kunci'],
-          ['kasa','Payung'],
-          ['doa','Pintu'],
-          ['mado','Jendela'],
-          ['genkan','Pintu masuk rumah'],
-          ['kutsu','Sepatu'],
+    // Rumah & perabot
+    ['かていようひん', 'katei youhin', 'Peralatan rumah tangga'],
+    ['ゴミばこ', 'gomibako', 'Tempat sampah'],
+    ['カーペット', 'kāpetto', 'Karpet'],
+    ['カーテン', 'kāten', 'Gorden'],
+    ['でんき', 'denki', 'Listrik / lampu'],
+    ['かがみ', 'kagami', 'Cermin'],
+    ['ドア', 'doa', 'Pintu'],
+    ['まど', 'mado', 'Jendela'],
+    ['かけどけい', 'kakedokei', 'Jam dinding'],
+    ['げんかん', 'genkan', 'Pintu masuk rumah'],
+    ['くつ', 'kutsu', 'Sepatu'],
+    ['ベランダ', 'beranda', 'Balkon'],
+    ['にわ', 'niwa', 'Halaman'],
+    ['そうじき', 'sōjiki', 'Vacuum cleaner'],
+    ['せんたくき', 'sentakuki', 'Mesin cuci'],
+    ['アイロン', 'airon', 'Setrika'],
+    ['エアコン', 'eakon', 'AC (Air Conditioner)'],
 
-          ['karada','Tubuh'],
-          ['atama','Kepala'],
-          ['me','Mata'],
-          ['mimi','Telinga'],
-          ['hana','Hidung'],
-          ['kuchi','Mulut'],
-          ['ha','Gigi'],
-          ['ude','Lengan'],
-          ['ashi','Kaki'],
+    // Tubuh manusia
+    ['からだ', 'karada', 'Tubuh'],
+    ['あたま', 'atama', 'Kepala'],
+    ['かみ', 'kami', 'Rambut'],
+    ['ひたい', 'hitai', 'Dahi'],
+    ['かお', 'kao', 'Wajah'],
+    ['め', 'me', 'Mata'],
+    ['まゆ', 'mayu', 'Alis'],
+    ['まつげ', 'matsuge', 'Bulu mata'],
+    ['みみ', 'mimi', 'Telinga'],
+    ['はな', 'hana', 'Hidung'],
+    ['くち', 'kuchi', 'Mulut'],
+    ['は', 'ha', 'Gigi'],
+    ['した', 'shita', 'Lidah'],
+    ['あご', 'ago', 'Dagu'],
+    ['ほお / ほほ', 'hoo / hoho', 'Pipi'],
+    ['くび', 'kubi', 'Leher'],
+    ['かた', 'kata', 'Bahu'],
+    ['むね', 'mune', 'Dada'],
+    ['せなか', 'senaka', 'Punggung'],
+    ['おなか', 'onaka', 'Perut'],
+    ['こし', 'koshi', 'Pinggang'],
+    ['しり', 'shiri', 'Pantat'],
+    ['しんぞう', 'shinzou', 'Jantung'],
+    ['い', 'i', 'Lambung'],
+    ['ほね', 'hone', 'Tulang'],
+    ['ひふ', 'hifu', 'Kulit'],
+    ['ち', 'chi', 'Darah'],
+    ['うで', 'ude', 'Lengan'],
+    ['ひじ', 'hiji', 'Siku'],
+    ['て', 'te', 'Tangan'],
+    ['てくび', 'tekubi', 'Pergelangan tangan'],
+    ['ゆび', 'yubi', 'Jari'],
+    ['つめ', 'tsume', 'Kuku'],
+    ['ふともも', 'futomomo', 'Paha'],
+    ['ひざ', 'hiza', 'Lutut'],
+    ['ふくらはぎ', 'fukurahagi', 'Betis'],
+    ['あしくび', 'ashikubi', 'Pergelangan kaki'],
+    ['あし', 'ashi', 'Kaki'],
+    ['かかと', 'kakato', 'Tumit'],
+    ['あしのゆび', 'ashi no yubi', 'Jari kaki'],
 
-          ['mise','Toko'],
-          ['panya','Toko roti'],
-          ['nikuya','Toko daging'],
-          ['sakanaya','Toko ikan'],
-          ['yaoya','Toko sayur'],
-          ['kafe','Kafe / coffee shop'],
-          ['sushiya','Restoran sushi']
-        ]
-      }
+    // Toko & tempat usaha
+    ['みせ', 'mise', 'Toko'],
+    ['パンや', 'pan’ya', 'Toko roti'],
+    ['にくや', 'nikuya', 'Toko daging'],
+    ['さかなや', 'sakanaya', 'Toko ikan'],
+    ['やおや', 'yaoya', 'Toko sayur'],
+    ['くだものや', 'kudamonoya', 'Toko buah'],
+    ['ほんや', 'hon’ya', 'Toko buku'],
+    ['すしや', 'sushiya', 'Restoran sushi'],
+    ['ラーメンや', 'raamenya', 'Warung ramen'],
+    ['きっさてん', 'kissaten', 'Kedai kopi klasik / tradisional Jepang'],
+    ['カフェ', 'kafe', 'Kafe (modern)'],
+    ['こうじょう', 'koujou', 'Pabrik'],
+    ['うけつけ', 'uketsuke', 'Resepsionis'],
+    ['ガソリンスタンド', 'gasorin sutando', 'Pom bensin'],
+    ['コーヒーショップ', 'kōhī shoppu', 'Toko kopi / coffee shop'],
+    ['バーバーショップ', 'bābā shoppu', 'Barbershop'],
+    ['びよういん', 'biyōin', 'Salon kecantikan'],
+    ['とこや', 'tokoya', 'Tukang cukur tradisional']
+  ]
+}
     };
 
-    // ====== LOGIC QUIZ ======
-    let currentList = [];
-    let currentIdx = 0;
-    let correct = 0;
-    let wrong = 0;
-    let detail = [];
-
+    // State
+    let currentList = [], currentIdx = 0, correct = 0, wrong = 0, detail = [];
     const materiNameEl = document.getElementById('materiName');
     const totalCountEl = document.getElementById('totalCount');
     const totalCount2El = document.getElementById('totalCount2');
@@ -355,33 +620,60 @@
     const answerInput = document.getElementById('answerInput');
     const feedback = document.getElementById('feedback');
 
-    document.querySelectorAll('.select-materi').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        document.querySelectorAll('.select-materi').forEach(b=>b.classList.remove('ring','ring-white/20'));
+    // Helper: safe getter for material data
+    function getMaterial(key){
+      if(!key) return null;
+      return Object.prototype.hasOwnProperty.call(DB, key) ? DB[key] : null;
+    }
+
+    // When a material button is clicked, we safely update UI even if material not yet present in DB
+    document.querySelectorAll('.select-materi').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.select-materi').forEach(b => b.classList.remove('ring','ring-white/20'));
         btn.classList.add('ring','ring-white/20');
         const key = btn.dataset.materi;
-        const data = DB[key];
-        if(!data) return;
-        materiNameEl.textContent = data.name;
-        totalCountEl.textContent = data.words.length;
-        totalCount2El.textContent = data.words.length;
-        // store selected in window for start
-        window._selected = key;
+        window._selected = key; // store selection regardless
+
+        const data = getMaterial(key);
+        if(!data){
+          // Material not present yet — show friendly placeholder and zero counts
+          materiNameEl.textContent = `${key} (belum ada data)`;
+          totalCountEl.textContent = '0';
+          totalCount2El.textContent = '0';
+          return;
+        }
+
+        // Material exists — update counts and name
+        materiNameEl.textContent = data.name || key;
+        const count = Array.isArray(data.words) ? data.words.length : 0;
+        totalCountEl.textContent = String(count);
+        totalCount2El.textContent = String(count);
       });
     });
 
-    document.getElementById('startBtn').addEventListener('click',()=>{
+    // Start quiz button
+    document.getElementById('startBtn').addEventListener('click', () => {
       const key = window._selected;
-      if(!key){ alert('Pilih materi dulu bos.'); return; }
+      const data = getMaterial(key);
+      if(!key){ alert('Pilih materi dulu, bos.'); return; }
+      if(!data || !Array.isArray(data.words) || data.words.length === 0){
+        alert('Materi terpilih belum berisi kosakata. Pilih materi lain atau tambahkan data ke DB.');
+        return;
+      }
       startQuizFor(key);
     });
 
+    // Start quiz with defensive checks
     function startQuizFor(key){
-      const data = DB[key];
-      currentList = data.words.map(w=>({romaji:w[0],answer:w[1]}));
+      const data = getMaterial(key);
+      if(!data){ alert('Data materi tidak ditemukan.'); return; }
+      if(!Array.isArray(data.words) || data.words.length === 0){ alert('Materi kosong.'); return; }
+
+      currentList = data.words.map(w => ({ kana: w[0], romaji: w[1], answer: w[2] }));
       // shuffle
-      currentList = currentList.sort(()=>Math.random()-0.5);
-      currentIdx = 0; correct=0; wrong=0; detail=[];
+      currentList = currentList.sort(() => Math.random() - 0.5);
+      currentIdx = 0; correct = 0; wrong = 0; detail = [];
+
       document.getElementById('startArea').classList.add('hidden');
       document.getElementById('quizArea').classList.remove('hidden');
       document.getElementById('resultArea').classList.add('hidden');
@@ -389,74 +681,108 @@
     }
 
     function updateQuestion(){
-      if(currentIdx >= currentList.length){
-        finishQuiz(); return;
-      }
+      if(currentIdx >= currentList.length){ finishQuiz(); return; }
       const q = currentList[currentIdx];
-      currentIndexEl.textContent = currentIdx+1;
-      romajiQEl.textContent = q.romaji;
-      answerInput.value=''; answerInput.focus();
-      feedback.textContent='';
-      totalCountEl.textContent = currentList.length;
-      totalCount2El.textContent = currentList.length;
+      currentIndexEl.textContent = String(currentIdx + 1);
+      // Style B (sejajar) inside monospace box
+      romajiQEl.textContent = `${q.kana} — ${q.romaji}`;
+      answerInput.value = '';
+      answerInput.focus();
+      feedback.textContent = '';
     }
 
-    document.getElementById('submitBtn').addEventListener('click',submitAnswer);
-    answerInput.addEventListener('keydown',e=>{ if(e.key==='Enter') submitAnswer(); });
+    document.getElementById('submitBtn').addEventListener('click', submitAnswer);
+    answerInput.addEventListener('keydown', e => { if(e.key === 'Enter') submitAnswer(); });
 
-    function normalizeText(s){ return String(s||'').trim().toLowerCase(); }
+    function normalize(s){ return String(s || '').trim().toLowerCase(); }
 
     function submitAnswer(){
-      const user = normalizeText(answerInput.value);
-      if(user===''){ feedback.textContent='Isi jawaban dulu (atau tekan Lewati).'; return; }
+      const user = normalize(answerInput.value);
+      if(!user){ feedback.textContent = 'Isi jawaban dulu'; return; }
+      if(currentIdx >= currentList.length){ feedback.textContent = 'Quiz sudah selesai.'; return; }
+
       const q = currentList[currentIdx];
-      const correctAnswer = normalizeText(q.answer);
-      // simple check: accept if user's answer contains main word(s) OR exact match
-      const ok = correctAnswer.split(/[ ,\/()]+/).some(token=> token && user.includes(token));
-      if(ok){ correct++; feedback.innerHTML = '<span class="text-green-400">Benar!</span> → '+q.answer; detail.push({q:q.romaji, a:q.answer, your:answerInput.value, ok:true}); }
-      else{ wrong++; feedback.innerHTML = '<span class="text-red-400">Salah</span> → Jawaban benar: '+q.answer; detail.push({q:q.romaji, a:q.answer, your:answerInput.value, ok:false}); }
-      currentIdx++; setTimeout(updateQuestion, 600);
+      // Simple matching: check if user's text includes main token(s) of the answer
+      const correctAnswer = normalize(q.answer || '');
+      const tokens = correctAnswer.split(/[,\/()\s]+/).filter(Boolean);
+      const ok = tokens.some(t => t && user.includes(t));
+
+      if(ok){ correct++; feedback.innerHTML = '<span style="color:#34D399">Benar</span> → ' + q.answer; detail.push({ q, ok: true, user }); }
+      else{ wrong++; feedback.innerHTML = '<span style="color:#FB7185">Salah</span> → ' + q.answer; detail.push({ q, ok: false, user }); }
+
+      currentIdx++;
+      setTimeout(updateQuestion, 700);
     }
 
-    document.getElementById('skipBtn').addEventListener('click',()=>{
-      const q=currentList[currentIdx];
-      wrong++; detail.push({q:q.romaji,a:q.answer,your:'(DILEWAT)',ok:false});
+    // Skip button
+    document.getElementById('skipBtn').addEventListener('click', () => {
+      if(currentIdx >= currentList.length) return;
+      const q = currentList[currentIdx];
+      wrong++; detail.push({ q, ok: false, user: '(lewati)' });
       currentIdx++; updateQuestion();
     });
 
-    document.getElementById('endBtn').addEventListener('click',finishQuiz);
+    // End early
+    document.getElementById('endBtn').addEventListener('click', finishQuiz);
 
-    function finishQuiz(){
-      document.getElementById('quizArea').classList.add('hidden');
-      const total = currentList.length;
-      document.getElementById('resultArea').classList.remove('hidden');
-      const scoreText = document.getElementById('scoreText');
-      scoreText.textContent = `Benar: ${correct} • Salah: ${wrong} • Total: ${total}`;
-      const dl = document.getElementById('detailList');
-      dl.innerHTML = '';
-      detail.forEach((d,i)=>{
-        const el = document.createElement('div');
-        el.className='p-2 border-b border-white/5';
-        el.innerHTML = `<div class="font-medium">${i+1}. ${d.q}</div><div class="text-xs text-gray-400">Jawaban anda: ${escapeHtml(d.your)} — ${d.ok?'<span class="text-green-400">Benar</span>':'<span class="text-red-400">Salah</span>'}</div><div class="text-xs">Jawaban benar: ${escapeHtml(d.a)}</div>`;
-        dl.appendChild(el);
-      });
-    }
+     function finishQuiz() {
+  document.getElementById('quizArea').classList.add('hidden');
+  const total = currentList.length;
+  document.getElementById('resultArea').classList.remove('hidden');
+  const scoreText = document.getElementById('scoreText');
+  scoreText.textContent = `Benar: ${correct} • Salah: ${wrong} • Total: ${total}`;
+  const dl = document.getElementById('detailList');
+  dl.innerHTML = '';
 
-    document.getElementById('retryBtn').addEventListener('click',()=>{
-      const key = window._selected; startQuizFor(key);
+  detail.forEach((d, i) => {
+    const el = document.createElement('div');
+    el.className = 'p-2 border-b border-white/5';
+    el.innerHTML = `
+      <div class="font-medium">${i + 1}. ${d.q.kana} — ${d.q.romaji}</div>
+      <div class="text-xs text-gray-400">
+        Jawaban anda: ${escapeHtml(d.user)} —
+        ${d.ok ? '<span class="text-green-400">Benar</span>' : '<span class="text-red-400">Salah</span>'}
+      </div>
+      <div class="text-xs">Jawaban benar: ${escapeHtml(d.q.answer)}</div>
+    `;
+    dl.appendChild(el);
+  });
+}
+
+
+    // Retry (guarded)
+    document.getElementById('retryBtn').addEventListener('click', () => {
+      const key = window._selected;
+      const data = getMaterial(key);
+      if(!data || !Array.isArray(data.words) || data.words.length === 0){
+        alert('Tidak bisa mengulang: materi kosong atau belum dipilih.');
+        return;
+      }
+      startQuizFor(key);
     });
-    document.getElementById('backBtn').addEventListener('click',()=>{
+
+    // Back to select
+    document.getElementById('backBtn').addEventListener('click', () => {
       document.getElementById('resultArea').classList.add('hidden');
       document.getElementById('startArea').classList.remove('hidden');
-      document.getElementById('materiName').textContent='—';
-      document.getElementById('totalCount').textContent='0';
-      document.querySelectorAll('.select-materi').forEach(b=>b.classList.remove('ring'));
+      materiNameEl.textContent = '—'; totalCountEl.textContent = '0';
     });
 
+    // small helper
     function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-    // small UX: allow selecting first button by default
-    // document.querySelector('.select-materi').click();
+    // Optional: pre-select first available material if present
+    (function preselect(){
+      const keys = Object.keys(DB);
+      if(keys.length){
+        window._selected = keys[0];
+        const btn = document.querySelector(`.select-materi[data-materi="${keys[0]}"]`);
+        if(btn){ btn.classList.add('ring','ring-white/20'); }
+        const data = getMaterial(keys[0]);
+        if(data){ materiNameEl.textContent = data.name; totalCountEl.textContent = String(data.words.length); totalCount2El.textContent = String(data.words.length); }
+      }
+    })();
+
   </script>
 </body>
 </html>
